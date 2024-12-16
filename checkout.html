@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+    <script src="CSS/main.js"></script>
+    <div class="container-fluid d-flex flex-column flex-lg-row min-vh-100">
+
+        
+        <div class="d-flex flex-column align-items-center justify-content-center bg-white p-4 flex-grow-1">
+            <img src="./img/download (1).jpg" alt="Google logo" class="img-fluid" style="max-width: 200px; max-height: 200px;" />
+            <h1 class="text-primary mt-4">Payment Gateway</h1>
+            <p class="text-muted">Enter school location details!</p>
+        </div>
+
+    
+        <div class="bg-white p-4 flex-grow-1">
+            <h2 class="mb-4">Complete Registration Payment</h2>
+            <form>
+                
+                <div class="mb-4">
+                    <h3 class="h5 mb-2">Address Line</h3>
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="P.O.Box 1223" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Arusha" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Arusha, Tanzania" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="9090" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+
+    
+                <div class="mb-4">
+                    <h3 class="h5 mb-2">Payment Methods</h3>
+                    <div class="d-flex gap-2">
+                        <img src="./img/logo visa.png" alt="Visa logo" class="img-fluid" style="width: 50px; height: auto;" />
+                        <img src="./img/download.png" alt="Stripe logo" class="img-fluid" style="width: 50px; height: auto;" />
+                        <img src="./img/images (2).png" alt="PayPal logo" class="img-fluid" style="width: 50px; height: auto;" />
+                        <img src="./img/images.jpg" alt="MasterCard logo" class="img-fluid" style="width: 50px; height: auto;" />
+                        <img src="./img/pngtree-google-pay-payment-software-vector-png-image_12256718.png" alt="Google Pay logo" class="img-fluid" style="width: 50px; height: auto;" />
+                    </div>
+                </div>
+
+    
+                <div class="mb-4">
+                    <h3 class="h5 mb-2">Card Details</h3>
+                    <form id="checkoutForm">
+
+                    <div class="mb-3">
+                        <label for="cardholder-name" class="form-label">Cardholder's Name</label>
+                        <input id="cardholder-name" type="text" placeholder="Seen on your card" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="card-number" class="form-label">Card Number</label>
+                        <input id="card-number" type="text" placeholder="Seen on your card" class="form-control" />
+                    </div>
+
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <label for="expiry-date" class="form-label">Expiry Date</label>
+                            <input id="expiry-date" type="text" placeholder="20/23" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cvc" class="form-label">CVC</label>
+                            <input id="cvc" type="text" placeholder="654" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+
+                
+                <button type="submit" class="btn btn-primary w-100">Next</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
